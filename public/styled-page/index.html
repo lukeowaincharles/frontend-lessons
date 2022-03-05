@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Styled page, dist folder contains compiled CSS and JS."
+    />
+    <title>Styled page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="./dist/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <div class="logo">Luke</div>
+          <nav>
+            <div class="menu">
+              <button id="menuButton">Menu</button>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Newsletter</li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">Hi I'm Luke</h1>
+            <p class="hero__text">A frontend developer with a photographic background</p>
+            <button id="scrollToContent" class="text-link text-link--hero">Find out more</button>
+          </div>
+        </div>
+        <div class="hero__image"></div>
+        <div class="hero__overlay"></div>
+      </section>
+      <section class="tools" id="scrollContent">
+        <div class="container">
+          <div class="tools__content">
+            <h2 class="tools__title">Tools and languages I use</h2>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="about">
+        <div class="container">
+          <div class="about__content">
+            <h2 class="about__title">About me</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis erat. Proin at tortor mollis, cursus felis in, finibus ante. Duis metus ipsum, blandit vitae malesuada eget, cursus sed purus. Cras sit amet venenatis nunc. Ut rutrum justo eros, sit amet laoreet dui lacinia quis. Morbi varius ante ante, sed rutrum mauris gravida vitae. Suspendisse sodales sapien mauris, at bibendum tellus consectetur a. Integer in commodo urna.</p>
+            <img src="dist/assets/images/divider.svg" alt="Page divider" />
+          </div>
+        </div>
+      </section>
+      <!-- Work section -->
+      <section class="work">
+        <div class="container">
+          <div class="work__content">
+            <h2 class="work__title">What I've worked on</h2>
+            <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis erat. Proin at tortor mollis, cursus felis in, finibus ante. Duis metus ipsum, blandit vitae malesuada eget, cursus sed purus.</p>
+            <div class="work__cards">
+              <div class="card">
+                <div class="card__body">
+                  <img src="" alt="" />
+                  <h3 class="card__title">HTML</h3>
+                  <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  ->
+                </div>
+              </div>
+              <!--  -->
+              <div class="card card--reverse">
+                <div class="card__body">
+                  <img src="" alt="" />
+                  <h3 class="card__title">CSS</h3>
+                  <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  ->
+                </div>
+              </div>
+              <!--  -->
+              <div class="card">
+                <div class="card__body">
+                  <img src="" alt="" />
+                  <h3 class="card__title">Git</h3>
+                  <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  ->
+                </div>
+              </div>
+            </div>
+            <img src="dist/assets/images/divider.svg" alt="Page divider" />
+          </div>
+        </div>
+      </section>
+      <!-- Learning section -->
+      <section class="learning">
+        <div class="container">
+          <div class="learning__content">
+            <h2 class="learning__title">What I'm learning</h2>
+            <p class="learning__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis erat. Proin at tortor mollis, cursus felis in, finibus ante. Duis metus ipsum, blandit vitae malesuada eget, cursus sed purus.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Form -->
+      <section class="form">
+        <div class="container">
+          <div class="form__content">
+            <h2 class="form__title">Want to keep up to date with my progress?</h2>
+            <p class="form__text">Join my mailing list to see my journey as a self taught developer</p>
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" id="email" placeholder="Email" />
+            <button class="form__submit">Subscribe</button>
+            <p class="form__disclaimer">I promise not to share your details with anyone else!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo logo--footer">Luke</div>
+        <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis erat. Proin at tortor mollis, cursus felis in, finibus ante. Duis metus ipsum, blandit vitae malesuada eget, cursus sed purus.</p>
+        <p class="footer__copyright">&COPY; <span id="copyDate"></span></p>
+      </div>
+    </footer>
+    <script src="./dist/js/theme.js" ></script>
+  </body>
+</html>
