@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Elements page" />
+    <title>Elements</title>
+    <style type="text/css">
+      pre {
+        background-color: #eeeeee;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      code {
+        white-space: break-spaces;
+      }
+
+      .list {
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .list li {
+        margin-left: 130px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <pre>
+        <code>
+          <span>&lt;</span><span>!DOCTYPE html</span><span>&gt;</span>
+          <span>&lt;</span><span>html lang="en"</span><span>&gt;</span>
+            <span>&lt;</span><span>head</span><span>&gt;</span>
+              <span>&lt;</span><span>meta charset="utf-8"</span><span>/</span><span>&gt;</span> 
+              <span>&lt;</span><span>title</span><span>&gt;</span>This is the title of the site<span>&lt;</span><span>/title</span><span>&gt;</span>
+              <span>&lt;</span><span>link href="path/to/stylesheet" rel="stylesheet"</span><span></span><span>&gt;</span>
+            <span>&lt;</span><span>/head</span><span>&gt;</span>
+            <span>&lt;</span><span>body</span><span>&gt;</span>
+              {# Heading tag #}
+              <span>&lt;</span><span>h1</span><span>&gt;</span>This is an h1 - there should only be one of these on a page.<span>&lt;</span><span>/h1</span><span>&gt;</span>
+              <br/>
+              {# P tag #}
+              <span>&lt;</span><span>p</span><span>&gt;</span>This is a p tag or paragraph, this is generally used to hold sentences or content of the website<span>&lt;</span><span>/p</span><span>&gt;</span>
+              <br/>
+              {# Unordered list #}
+              <ul class="list">
+              <span>&lt;</span><span>ul</span><span>&gt;</span>
+                <li><span>&lt;</span><span>li</span><span>&gt;</span>List item<span>&lt;</span><span>/li</span><span>&gt;</span></li>
+                <li><span>&lt;</span><span>li</span><span>&gt;</span>List item<span>&lt;</span><span>/li</span><span>&gt;</span></li>
+                <li><span>&lt;</span><span>li</span><span>&gt;</span>List item<span>&lt;</span><span>/li</span><span>&gt;</span></li>
+              <span>&lt;</span><span>/ul</span><span>&gt;</span>
+              </ul>
+              {# Ordered list #}
+              <ol class="list">
+                <span>&lt;</span><span>ol</span><span>&gt;</span>
+                  <li><span>&lt;</span><span>li</span><span>&gt;</span>List item<span>&lt;</span><span>/li</span><span>&gt;</span></li>
+                  <li><span>&lt;</span><span>li</span><span>&gt;</span>List item<span>&lt;</span><span>/li</span><span>&gt;</span></li>
+                  <li><span>&lt;</span><span>li</span><span>&gt;</span>List item<span>&lt;</span><span>/li</span><span>&gt;</span></li>
+                <span>&lt;</span><span>/ol</span><span>&gt;</span>
+              </ol>
+              {# Image tag - image tags are self closing #}
+              <span>&lt;</span><span>img</span> src="path/to/image" alt="alternate text to describe image" <span>/</span><span>&gt;</span>
+              <br/>
+              {# br tag allows you to add a break between elements #}
+              <span>&lt;</span><span>br</span><span>/</span><span>&gt;</span>
+              {# There is also the nbsp tag - stands for non breaking space #}
+              <span>&lt;</span><span>nbsp</span><span>/</span><span>&gt;</span>
+              <nbsp/>
+            <span>&lt;</span><span>/body</span><span>&gt;</span>
+          <span>&lt;</span><span>/html</span><span>&gt;</span>
+        </code>
+      </pre>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">This is the H1</h1>
+            <h2 class="hero__title">This is the H2</h2>
+            <h3 class="hero__title">This is the H3</h3>
+            <h4 class="hero__title">This is the H4</h4>
+            <h5 class="hero__title">This is the H5</h5>
+            <h6 class="hero__title">This is the H6</h6>
+            <p class="hero__text">Here is a p tag</p>
+            <ol>
+              <li>This is a list item (li) within an ordered list</li>
+              <li>The list items will be numbered</li>
+              <li>And will appear in order</li>
+              <li>Hence an ordered list - ol</li>
+            </ol>
+            <ul>
+              <li>An unordered list (ul) is essentially the same as above</li>
+              <li>But these will just have discs rather than numbers</li>
+              <li>They both use the same list item element - li</li>
+            </ul>
+            <p>
+              Here is a link to the markup page:
+              <a href="/markup-only">Markup only</a>
+            </p>
+            <p>
+              Here is a link to the styled page:
+              <a href="/styled-page">styled page</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
