@@ -1,0 +1,10 @@
+
+/public/*/dist
+/public/*/node_modules
+
+# Ignore editors
+.vscode
+
+.DS_Store
+/.editorconfig
+/.gitattributes
