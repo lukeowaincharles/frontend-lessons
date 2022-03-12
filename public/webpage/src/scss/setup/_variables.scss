@@ -1,0 +1,17 @@
+// Breakpoints
+$grid-breakpoints: () !default;
+$grid-breakpoints: map-merge(
+  $grid-breakpoints,
+  (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+  )
+);
+
+$brand-white: #ffffff;
+$brand-black: #000000;
+$brand-red: #ff0000;
