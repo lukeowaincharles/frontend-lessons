@@ -1,8 +1,8 @@
-const imagemin = require('imagemin');
-const imageminMozjpeg = require('imagemin-mozjpeg');
-const imageminPngquant = require('imagemin-pngquant');
-const imageminGifsicle = require('imagemin-gifsicle');
-const imageminSvgo = require('imagemin-svgo');
+const imagemin = import('imagemin');
+const imageminMozjpeg = import('imagemin-mozjpeg');
+const imageminPngquant = import('imagemin-pngquant');
+const imageminGifsicle = import('imagemin-gifsicle');
+const imageminSvgo = import('imagemin-svgo');
 
 (async () => {
   const files = await imagemin(
