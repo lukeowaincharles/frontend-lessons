@@ -1,0 +1,33 @@
+#########################
+## Sample Sass Lint File
+#########################
+# Linter Options
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+  formatter: stylish
+  # Raise an error if more than 20 warnings are generated
+  max-warnings: 20
+# File Options
+files:
+  include: 'sass/**/*.s+(a|c)ss'
+  ignore:
+    - 'sass/vendor/**/*.*'
+# Rule Configuration
+rules:
+  extends-before-declarations: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+  no-warn: 1
+  no-debug: 1
+  no-ids: 1
+  no-important: 1
+  variable-for-property:
+    - 1
+    -
+      allow-map-get: true
+  zero-unit: 2

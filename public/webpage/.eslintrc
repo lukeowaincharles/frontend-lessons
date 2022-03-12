@@ -1,0 +1,15 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "settings": {},
+  "rules": {
+      "quotes": [2,"single"],
+      "indent": [2,2],
+      "no-console": "warn",
+      "linebreak-style": ["error", "unix"]
+  }
+}
